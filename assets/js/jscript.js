@@ -86,7 +86,7 @@ $(document).ready(function(){
 	function potencializao(num1){
 		var res = 0;
 		for (i=0; i<num1; i++){
-			res= res+(i+i+1);
+			res = soma(res,(i+i+1));
 		}
 		return res;
 	}
