@@ -44,7 +44,7 @@ $(document).ready(function(){
 			res = soma(res,num1);
 		}
 		
-		if ((negativo) && (res == 0)){
+		if ((negativo) && (res != 0)){
 			res = Number('-'+res);
 		}
 		
