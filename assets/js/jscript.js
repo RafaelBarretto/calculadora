@@ -33,10 +33,10 @@ $(document).ready(function(){
 		}else{
 			if (num2 < 0){
 				negativo = true;
-				num2 = Number($(num2).text().substring(1));
+				num2 = Number($('#Num2').text().substring(1));
 			}else if(num1 < 0){
 				negativo = true;
-				num1 = Number($(num1).text().substring(1));
+				num1 = Number($('#Num1').text().substring(1));
 			}
 		}
 		
@@ -44,7 +44,7 @@ $(document).ready(function(){
 			res = soma(res,num1);
 		}
 		
-		if ((negativo) && (res == 0)){
+		if ((negativo) && (res != 0)){
 			res = Number('-'+res);
 		}
 		
@@ -62,10 +62,10 @@ $(document).ready(function(){
 		}else{
 			if (num2 < 0){
 				negativo = true;
-				num2 = Number($(num2).text().substring(1));
+				num2 = Number($('#Num2').text().substring(1));
 			}else if(num1 < 0){
 				negativo = true;
-				num1 = Number($(num1).text().substring(1));
+				num1 = Number($('#Num1').text().substring(1));
 			}
 		}
 		
@@ -76,7 +76,7 @@ $(document).ready(function(){
 			}
 		}
 		
-		if (negativo){
+		if ((negativo) && (res !=0)){
 			res = "-" + res;
 		}
 		
